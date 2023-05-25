@@ -29,6 +29,34 @@
         input[type="button"]{
             background-color: green;
         }
+        /* 後代選擇器(使用空格符號) */
+        .test1 a{
+            color: green;
+        }
+        /* 子選擇器(使用>符號) */
+        .test2>a{
+            color: red;
+        }
+        /* 同層相鄰選擇器(使用+符號)、同層全體選擇器(使用~符號) */
+        /* ul+p{
+            color: red;
+        } */
+        ul~p{
+            color: red;
+        }
+        /* 偽類選擇器(使用:符號) */
+        .a3:hover{
+            color: green;
+        }
+        /* 偽元素選擇器(使用::符號) */
+        .div3::after{
+            content: "偽元素";
+        }
+        /* 群組選擇器(使用,符號) */
+        ul li,ol li{
+            color: blue;
+        }
+
         </style>
 </head>
 <body>
